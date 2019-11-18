@@ -1,4 +1,4 @@
-const Product = require("./../interface/Market.js");
+// const Product = require("./../interface/Market.js");
 const datalogic = require ("./../dataaccess/datalogic");
 const mysql = require('mysql2');
 const expressvalidator = require('express-validator');
