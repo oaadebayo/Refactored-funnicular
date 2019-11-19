@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,6 +17,7 @@
     "express-handlebars": "^3.1.0",
     "express-validator": "^6.2.0",
     "mysql2": "^1.7.0",
+    "nodemon": "^1.19.4",
     "sequelize": "^5.21.0"
   }
 }
