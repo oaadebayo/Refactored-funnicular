@@ -38,16 +38,18 @@ function register_product(req, res) {
     connection.query("INSERT INTO products (product_name, price, quantity, date, market_name) VALUES ( ?, ?, ?, ?, ?)", market_monitoring_2, function (error, results, fields) {
         if (error) {
             console.log("error occurred", error);
-            res.send({
+            // you're already setting the res header here. no need setting it again in app.js: res.render('index', {message: 'Data Saved Successfully'});
+            /* res.send({
                 "code": 400,
                 "failed": "error occurred"
-            })
+            }); */
+            throw error;
         } else {
             console.log('The solution is ', results);
-            res.send({
+            /* res.send({
                 "code": 200,
                 "success": "Registered Successfully"
-            });
+            }); */
         }
     })
 }
