@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>See Martket Trends</title>
+</head>
+<body>
+    <h2>Hi, there</h2>
+    <h4>This is a test form to see how the post works</h4>
+    <form action="/api/registerproduct" method="post" name="testform">
+        <label for="date">Date:</label> <input type="date" name="date" id="d">
+        <label for="product_name">Product name:</label> <input type="text" name="product_name" id="pn">
+        <label for="market_name">Market name:</label> <input type="text" name="market_name" id="mn">
+        <label for="quantity">Quantity:</label> <input type="number" name="quantity" id="q">
+        <label for="price">Price:</label> <input type="number" name="price" id="p">
+
+        <input type="submit" value="Submit">
+    </form>
+    <% if (message) { %>
+        <h5><%= message %>. We got your message submitted at <%= Date(date) %></h5>
+    <% } %>
+    
+</body>
+</html>

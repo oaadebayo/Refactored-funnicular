@@ -33,5 +33,5 @@ console.log('Server started on port 4100');
 app.post('/api/registerproduct',  function(req, res){
     registerProduct(req, res);
     console.log(req.body)
-    res.render('index', {message: 'Data Saved Successfully'});
+    res.render('index', {message: 'Data Saved Successfully', date: Date.now()});
 });
